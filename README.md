@@ -1,18 +1,18 @@
 Introduction
 -------------------
-This dataset contains 18,000,000 computer generated building footprints in Tanzania and Uganda. This data is freely available for download and use.
+This dataset contains 17,943,078 computer generated building footprints in Tanzania and Uganda. This data is freely available for download and use.
 
 License
 -------------------
-This data is licensed by Microsoft under the [Open Data Commons Open Database License (ODbL)](https://opendatacommons.org/licenses/odbl/)
+This data is licensed by Microsoft under the [Open Data Commons Open Database License (ODbL)](https://opendatacommons.org/licenses/odbl/).
 
 ## FAQ
 #### What the data include:
-18,000,000 building footprint polygon geometries in Tanzania and Uganda in GeoJSON format.
+17,943,078 building footprint polygon geometries in Tanzania and Uganda in GeoJSON format.
 
 #### What is the GeoJson format?
 GeoJSON is a format for encoding a variety of geographic data structures. 
-For Intensive Documentation and Tutorials, Refer to [GeoJson Blog](http://geojson.org/)
+For Intensive Documentation and Tutorials, Refer to [GeoJson Blog](http://geojson.org/).
 
 #### Creation Details:
 The building extraction is done in two stages:
@@ -31,19 +31,13 @@ The training set consists of 1.2 million labeled buildings. Images in the set ar
 
 #### Metrics
 These are the intermediate stage metrics we use to track DNN model improvements and they are pixel based.
-Pixel recall/precision = 86.8%/81.8%
+Pixel recall/precision = 86.8%/81.8%.
 
 ### Polygonization
 ![](/images/polygonization.PNG)
 
 #### Method description
-We developed a method that approximates the prediction pixels into polygons making decisions based on the whole prediction feature space. This is very different from standard approaches, e.g. the Douglas-Peucker algorithm, which are greedy in nature. The method tries to impose some of a priori building properties, which is, at the moment, manually defined and automatically tuned. Some of these a priori properties are:
-1. The building edge must be of at least some length, both relative and absolute, e.g. 3 meters
-2. Consecutive edge angles are likely to be 90 degrees
-3. Consecutive angles cannot be very sharp, smaller by some auto-tuned threshold, e.g. 30 degrees
-4. Building angles likely have very few dominant angles, meaning all building edges are forming an angle of (dominant angle _&pm;_ n&pi;/2)
-
-In near future, we will be looking to deduce this automatically from existing building information.
+We developed a method that approximates the prediction pixels into polygons making decisions based on the whole prediction feature space. This is very different from standard approaches, e.g. Douglas-Peucker algorithm, which are greedy in nature. The method tries to impose some of a priori building properties, which is, at the moment, manually defined and automatically tuned.
 
 #### Metrics
 Building matching metrics:
@@ -62,7 +56,7 @@ We track various metrics to measure the quality of the output:
 
 ![](/images/bldgmetrics.JPG)
 
-On our evaluation set contains ~15k building. The metrics on the set are:
+On our evaluation set contains 18.5k building. The metrics on the set are:
 - IoU is 0.68, Shape distance is 0.39, Average rotation error is 4.1 degrees
 
 #### Data Vintage
@@ -83,13 +77,9 @@ Microsoft has a continued interest in supporting a thriving OpenStreetMap ecosys
 #### Should we import the data into OpenStreetMap?
 Maybe. Never overwrite the hard work of other contributors or blindly import data into OSM without first checking the local quality. While our metrics show that this data meets or exceeds the quality of hand-drawn building footprints, the data does vary in quality from place to place, between rural and urban, mountains and plains, and so on. Inspect quality locally and discuss an import plan with the community. Always follow the [OSM import community guidelines](https://wiki.openstreetmap.org/wiki/Import/Guidelines).
 
-A Vector Tile implementation of the data is hosted by [Esri](https://www.arcgis.com/home/item.html?id=f40326b0dea54330ae39584012807126)
-
-
 | Country       | Number of Buildings  | Unzipped MB |
 | ------------- |:-------------:| -----:|
-| [Tanzania and Uganda](https://usbuildingdata.blob.core.windows.net/usbuildings-v1-1/Alabama.zip)|2,460,404|526|
-<br>
+| [Uganda and Tanzania](https://usbuildingdata.blob.core.windows.net/tanzania-uganda-buildings/UgandaAndTanzania_2019-09-16.zip)|17,943,078|3541|
 <br>
 
 # Contributing
