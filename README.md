@@ -19,7 +19,7 @@ The building extraction is done in two stages:
 1.	Semantic Segmentation – Recognizing building pixels on the aerial image using DNNs
 2.	Polygonization – Converting building pixel blobs into polygons
 ### Semantic Segmentation
-![](/images/segmentation.png)
+![](/images/segmentation.jpg)
 
 
 #### DNN architecture
@@ -34,7 +34,7 @@ These are the intermediate stage metrics we use to track DNN model improvements 
 Pixel recall/precision = 86.8%/81.8%.
 
 ### Polygonization
-![](/images/polygonization.PNG)
+![](/images/polygonization.jpg)
 
 #### Method description
 We developed a method that approximates the prediction pixels into polygons making decisions based on the whole prediction feature space. This is very different from standard approaches, e.g. Douglas-Peucker algorithm, which are greedy in nature. The method tries to impose some of a priori building properties, which is, at the moment, manually defined and automatically tuned.
