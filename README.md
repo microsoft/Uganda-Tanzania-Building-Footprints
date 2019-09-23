@@ -61,7 +61,7 @@ The evaluation set contains 18.5k building. The metrics on the set are:
 - IoU is 0.68, Shape distance is 0.39, Average rotation error is 4.1 degrees
 
 #### Data Vintage
-The vintage of the footprints depends on the vintage of the underlying imagery. Because Bing Imagery is a composite of multiple sources it is difficult to know the exact dates for individual pieces of data.
+The vintage of the footprints depends on the vintage of the underlying imagery. Bing Imagery is a composite of multiple sources, therefore it is difficult to know the exact dates for individual pieces of data.
 
 #### How good are the data?
 Our metrics show that in the vast majority of cases the quality is at least as good as data hand digitized buildings in OpenStreetMap. It is not perfect, particularly in dense urban areas but it is still awesome.
