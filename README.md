@@ -1,6 +1,7 @@
 Introduction
 -------------------
 This dataset contains 17,943,078 computer generated building footprints in Uganda and Tanzania. This data is freely available for download and use.
+More information is available on the [blog](https://blogs.bing.com/maps/2019-09/microsoft-releases-18M-building-footprints-in-uganda-and-tanzania-to-enable-ai-assisted-mapping).
 
 License
 -------------------
@@ -12,7 +13,7 @@ This data is licensed by Microsoft under the [Open Data Commons Open Database Li
 
 #### What is the GeoJson format?
 GeoJSON is a format for encoding a variety of geographic data structures. 
-For Intensive Documentation and Tutorials, Refer to [GeoJson Blog](http://geojson.org/).
+For intensive documentation and tutorials, refer to [GeoJson blog](http://geojson.org/).
 
 #### Creation Details:
 The building extraction is done in two stages:
@@ -31,7 +32,7 @@ The training set consists of 1.2 million labeled buildings. Images in the set ar
 
 #### Metrics
 These are the intermediate stage metrics we use to track DNN model improvements and they are pixel based.
-Pixel recall/precision = 86.8%/81.8%.
+Pixel precision/recall = 86.8%/81.8%.
 
 ### Polygonization
 ![](/images/polygonization.jpg)
@@ -56,7 +57,7 @@ We track various metrics to measure the quality of the output:
 
 ![](/images/bldgmetrics.JPG)
 
-On our evaluation set contains 18.5k building. The metrics on the set are:
+The evaluation set contains 18.5k building. The metrics on the set are:
 - IoU is 0.68, Shape distance is 0.39, Average rotation error is 4.1 degrees
 
 #### Data Vintage
