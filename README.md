@@ -1,6 +1,6 @@
 Introduction
 -------------------
-This dataset contains 17,943,078 computer generated building footprints in Tanzania and Uganda. This data is freely available for download and use.
+This dataset contains 17,943,078 computer generated building footprints in Uganda and Tanzania. This data is freely available for download and use.
 
 License
 -------------------
@@ -8,7 +8,7 @@ This data is licensed by Microsoft under the [Open Data Commons Open Database Li
 
 ## FAQ
 #### What the data include:
-17,943,078 building footprint polygon geometries in Tanzania and Uganda in GeoJSON format.
+17,943,078 building footprint polygon geometries in Uganda and Tanzania in GeoJSON format.
 
 #### What is the GeoJson format?
 GeoJSON is a format for encoding a variety of geographic data structures. 
