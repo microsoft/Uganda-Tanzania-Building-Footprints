@@ -1,7 +1,11 @@
 Introduction
 -------------------
-This dataset contains 17,943,078 computer generated building footprints in Uganda and Tanzania. This data is freely available for download and use.
+This dataset contains 17,943,078 computer generated building footprints in Uganda and Tanzania. This data is freely available for download and use in compliance with applicable license.
 More information is available on the [blog](https://blogs.bing.com/maps/2019-09/microsoft-releases-18M-building-footprints-in-uganda-and-tanzania-to-enable-ai-assisted-mapping).
+
+SS to add a little more context from blog
+NT to add split between Uganda and Tanzania. I believe we are better in Tanzania than Uganda in recall. 
+
 
 License
 -------------------
@@ -10,6 +14,7 @@ This data is licensed by Microsoft under the [Open Data Commons Open Database Li
 ## FAQ
 #### What the data include:
 17,943,078 building footprint polygon geometries in Uganda and Tanzania in GeoJSON format.
+SS: split for U and T
 
 #### What is the GeoJson format?
 GeoJSON is a format for encoding a variety of geographic data structures. 
@@ -30,15 +35,23 @@ The model is fully-convolutional, meaning that the model can be applied to an im
 #### Training details
 The training set consists of 1.2 million labeled buildings. Images in the set are with 30 cm/pixel resolution.
 
+Can we add details of different samples across urban, suburban and rural? And talk about diversity of data set? 
+
 #### Metrics
 These are the intermediate stage metrics we use to track DNN model improvements and they are pixel based.
 Pixel precision/recall = 86.8%/81.8%.
+
+Should we add pixel error? 
 
 ### Polygonization
 ![](/images/polygonization.jpg)
 
 #### Method description
 We developed a method that approximates the prediction pixels into polygons making decisions based on the whole prediction feature space. This is very different from standard approaches, e.g. Douglas-Peucker algorithm, which are greedy in nature. The method tries to impose some of a priori building properties, which is, at the moment, manually defined and automatically tuned.
+
+SS: I see below in US buildings Git post. Is it pretty standard stuff or part of your secret sauce for polygonization? If latter I’d remove it from US one. https://github.com/microsoft/USBuildingFootprints
+Some 
+
 
 #### Metrics
 Building matching metrics:
@@ -66,6 +79,8 @@ The vintage of the footprints depends on the vintage of the underlying imagery. 
 #### How good are the data?
 Our metrics show that in the vast majority of cases the quality is at least as good as data hand digitized buildings in OpenStreetMap. It is not perfect, particularly in dense urban areas but it is still awesome.
 
+SS: NT to add rural urban results
+
 ### What is the coordinate reference system?
 EPSG: 4326
 
@@ -83,6 +98,8 @@ Maybe. Never overwrite the hard work of other contributors or blindly import dat
 | [Uganda and Tanzania](https://usbuildingdata.blob.core.windows.net/tanzania-uganda-buildings/UgandaAndTanzania_2019-09-16.zip)|17,943,078|3541|
 <br>
 
+SS: Split table results by country because we already have that data 
+
 # Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
@@ -98,6 +115,8 @@ For more information see the [Code of Conduct FAQ](https://opensource.microsoft.
 contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
 # Legal Notices
+
+SS:Since we are using Tensorflow do we need to specify anything around that? SS to check with CELA if so. 
 
 Microsoft, Windows, Microsoft Azure and/or other Microsoft products and services referenced in the documentation
 may be either trademarks or registered trademarks of Microsoft in the United States and/or other countries.
