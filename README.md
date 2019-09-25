@@ -6,7 +6,7 @@ This data is licensed by Microsoft under the [Open Data Commons Open Database Li
 
 ## FAQ
 ### What does the data include?
-17,943,078 building footprint polygon geometries in Uganda and Tanzania in GeoJSON format.
+17,943,078 building footprint polygon geometries in Uganda and Tanzania in GeoJSON format. You can download the data here:
 
 | Country       | Number of Buildings  | Unzipped MB |
 | ------------- |:-------------:| -----:|
@@ -23,7 +23,7 @@ Microsoft has a continued interest in supporting a thriving OpenStreetMap ecosys
 Maybe. Never overwrite the hard work of other contributors or blindly import data into OSM without first checking the local quality. While our metrics show that this data meets or exceeds the quality of hand-drawn building footprints, the data does vary in quality from place to place, between rural and urban, mountains and plains, and so on. Inspect quality locally and discuss an import plan with the community. Always follow the [OSM import community guidelines](https://wiki.openstreetmap.org/wiki/Import/Guidelines).
 
 ### Will the data be used or made available in larger OpenStreetMap ecosystem?
-Yes. Currently Microsoft Open Buildings dataset is used in ml-enabler for task creation. You can try it out at [AI assisted Tasking Manager](https://tasks-assisted.hotosm.org/). The dataset is also available for editing in [RapiD](https://mapwith.ai/rapid-sotm2019#background=Maxar-FB&disable_features=boundaries&map=17.75/-6.17931/35.74461).
+Yes. Currently Microsoft Open Buildings dataset is used in ml-enabler for task creation. You can try it out at [AI assisted Tasking Manager](https://tasks-assisted.hotosm.org/). Facebook has also integrated the dataset into the experimental version of RapiD for mapping. Try out the experimental version here [RapiD](https://mapwith.ai/rapid-sotm2019#background=Maxar-FB&disable_features=boundaries&map=17.75/-6.17931/35.74461).
 
 ### What is the creation process for this data?
 The building extraction is done in two stages:
