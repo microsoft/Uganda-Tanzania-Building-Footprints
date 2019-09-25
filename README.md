@@ -1,12 +1,14 @@
 ## Introduction
-Under Microsoft’s AI for Humanitarian Action program, Bing Maps is contributing to an initiative from Humanitarian OpenStreetMap Team that will bring AI Assistance to open map building. Bing Maps is releasing country wide open building footprints datasets in Uganda and Tanzania. This dataset contains 17,943,078 computer generated building footprints. The data is freely available for download and use under applicable license. More information around the partnership is available on the [blog](https://blogs.bing.com/maps/2019-09/microsoft-releases-18M-building-footprints-in-uganda-and-tanzania-to-enable-ai-assisted-mapping).
+Under Microsoft’s AI for Humanitarian Action program, Bing Maps is contributing to an initiative from Humanitarian OpenStreetMap Team that will bring AI Assistance to open map building. More information around the partnership is available on [Bing Maps blog](https://blogs.bing.com/maps/2019-09/microsoft-releases-18M-building-footprints-in-uganda-and-tanzania-to-enable-ai-assisted-mapping).
+
+Bing Maps is releasing country wide open building footprints datasets in Uganda and Tanzania. This dataset contains 17,943,078 computer generated building footprints. The data is freely available for download and use under applicable license. 
 
 ## License
 This data is licensed by Microsoft under the [Open Data Commons Open Database License (ODbL)](https://opendatacommons.org/licenses/odbl/).
 
 ## FAQ
 ### What does the data include?
-17,943,078 building footprint polygon geometries in Uganda and Tanzania in GeoJSON format.
+17,943,078 building footprint polygon geometries in Uganda and Tanzania in GeoJSON format. You can download the data here:
 
 | Country       | Number of Buildings  | Unzipped MB |
 | ------------- |:-------------:| -----:|
@@ -23,7 +25,7 @@ Microsoft has a continued interest in supporting a thriving OpenStreetMap ecosys
 Maybe. Never overwrite the hard work of other contributors or blindly import data into OSM without first checking the local quality. While our metrics show that this data meets or exceeds the quality of hand-drawn building footprints, the data does vary in quality from place to place, between rural and urban, mountains and plains, and so on. Inspect quality locally and discuss an import plan with the community. Always follow the [OSM import community guidelines](https://wiki.openstreetmap.org/wiki/Import/Guidelines).
 
 ### Will the data be used or made available in larger OpenStreetMap ecosystem?
-Yes. Currently Microsoft Open Buildings dataset is used in ml-enabler for task creation. You can try it out at [AI assisted Tasking Manager](https://tasks-assisted.hotosm.org/). The dataset is also available for editing in [RapiD](https://mapwith.ai/rapid-sotm2019#background=Maxar-FB&disable_features=boundaries&map=17.75/-6.17931/35.74461).
+Yes. Currently Microsoft Open Buildings dataset is used in ml-enabler for task creation. You can try it out at [AI assisted Tasking Manager](https://tasks-assisted.hotosm.org/). Facebook has also integrated the dataset into experimental version of RapiD editor. Try out this experimental version here [RapiD](https://mapwith.ai/rapid-sotm2019#background=Maxar-FB&disable_features=boundaries&map=17.75/-6.17931/35.74461).
 
 ### What is the creation process for this data?
 The building extraction is done in two stages:
@@ -73,7 +75,7 @@ The evaluation set contains 18.5k building. The metrics on the set are:
 ### Data Vintage
 The vintage of the footprints depends on the vintage of the underlying imagery. Bing Imagery is a composite of multiple sources, therefore it is difficult to know the exact dates for individual pieces of data.
 
-#### How good is the data?
+### How good is the data?
 Our metrics show that in the vast majority of cases the quality is at least as good as data hand digitized buildings in OpenStreetMap. It is not perfect, particularly in dense urban areas but it provides good recall in rural areas. See below for metrics by area type:  
 ![](/images/polygonmetrics.JPG)
 
