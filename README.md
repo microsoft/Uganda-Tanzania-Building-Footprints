@@ -72,7 +72,7 @@ We track various metrics to measure the quality of the output:
 The evaluation set contains 18.5k building. The metrics on the set are:
 - IoU is 0.68, Shape distance is 0.39, Average rotation error is 4.1 degrees
 
-### Data Vintage
+### What is the vintage of this data?
 The vintage of the footprints depends on the vintage of the underlying imagery. Bing Imagery is a composite of multiple sources, therefore it is difficult to know the exact dates for individual pieces of data.
 
 ### How good is the data?
