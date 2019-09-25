@@ -1,9 +1,7 @@
 ## Introduction
--------------------
 Under Microsoft’s AI for Humanitarian Action program, Bing Maps is contributing to an initiative from Humanitarian OpenStreetMap Team that will bring AI Assistance to open map building. Building upon the work in the US and Canada, Bing Maps is now releasing country wide open building footprints datasets in Uganda and Tanzania. This dataset contains 17,943,078 computer generated building footprints in Uganda and Tanzania. The data is freely available for download and use under applicable license. More information around the partnership is available on the [blog](https://blogs.bing.com/maps/2019-09/microsoft-releases-18M-building-footprints-in-uganda-and-tanzania-to-enable-ai-assisted-mapping).
 
 ## License
--------------------
 This data is licensed by Microsoft under the [Open Data Commons Open Database License (ODbL)](https://opendatacommons.org/licenses/odbl/).
 
 ## FAQ
@@ -82,7 +80,7 @@ Maybe. Never overwrite the hard work of other contributors or blindly import dat
 | [Uganda and Tanzania](https://usbuildingdata.blob.core.windows.net/tanzania-uganda-buildings/UgandaAndTanzania_2019-09-16.zip)|17,943,078|3541|
 
 ### Will the data be used or made available in larger OpenStreetMap ecosystem?
-Yes. Currently Microsoft Open Buildings dataset is used in ml-enabler for task creation. You can try it out at [AI assisted Tasking Manager](https://tasks-assisted.hotosm.org/). The dataset is also available for editing in [RapiD](https://mapwith.ai/rapid-sotm2019#background=Maxar-FB&disable_features=boundaries&map=17.75/-6.17931/35.74461)
+Yes. Currently Microsoft Open Buildings dataset is used in ml-enabler for task creation. You can try it out at [AI assisted Tasking Manager](https://tasks-assisted.hotosm.org/). The dataset is also available for editing in [RapiD](https://mapwith.ai/rapid-sotm2019#background=Maxar-FB&disable_features=boundaries&map=17.75/-6.17931/35.74461).
 <br>
 
 ## Contributing
