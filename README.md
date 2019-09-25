@@ -1,24 +1,37 @@
 ## Introduction
-Under Microsoft’s AI for Humanitarian Action program, Bing Maps is contributing to an initiative from Humanitarian OpenStreetMap Team that will bring AI Assistance to open map building. Building upon the work in the US and Canada, Bing Maps is now releasing country wide open building footprints datasets in Uganda and Tanzania. This dataset contains 17,943,078 computer generated building footprints in Uganda and Tanzania. The data is freely available for download and use under applicable license. More information around the partnership is available on the [blog](https://blogs.bing.com/maps/2019-09/microsoft-releases-18M-building-footprints-in-uganda-and-tanzania-to-enable-ai-assisted-mapping).
+Under Microsoft’s AI for Humanitarian Action program, Bing Maps is contributing to an initiative from Humanitarian OpenStreetMap Team that will bring AI Assistance to open map building. Bing Maps is releasing country wide open building footprints datasets in Uganda and Tanzania. This dataset contains 17,943,078 computer generated building footprints. The data is freely available for download and use under applicable license. More information around the partnership is available on the [blog](https://blogs.bing.com/maps/2019-09/microsoft-releases-18M-building-footprints-in-uganda-and-tanzania-to-enable-ai-assisted-mapping).
 
 ## License
 This data is licensed by Microsoft under the [Open Data Commons Open Database License (ODbL)](https://opendatacommons.org/licenses/odbl/).
 
 ## FAQ
-### What the data include:
+### What does the data include?
 17,943,078 building footprint polygon geometries in Uganda and Tanzania in GeoJSON format.
+
+| Country       | Number of Buildings  | Unzipped MB |
+| ------------- |:-------------:| -----:|
+| [Uganda and Tanzania](https://usbuildingdata.blob.core.windows.net/tanzania-uganda-buildings/UgandaAndTanzania_2019-09-16.zip)|17,943,078|3541|
 
 ### What is the GeoJson format?
 GeoJSON is a format for encoding a variety of geographic data structures. 
 For intensive documentation and tutorials, refer to [GeoJson blog](http://geojson.org/).
 
-### Creation Details:
+### Why is the data being released?
+Microsoft has a continued interest in supporting a thriving OpenStreetMap ecosystem.
+
+### Should we import the data into OpenStreetMap?
+Maybe. Never overwrite the hard work of other contributors or blindly import data into OSM without first checking the local quality. While our metrics show that this data meets or exceeds the quality of hand-drawn building footprints, the data does vary in quality from place to place, between rural and urban, mountains and plains, and so on. Inspect quality locally and discuss an import plan with the community. Always follow the [OSM import community guidelines](https://wiki.openstreetmap.org/wiki/Import/Guidelines).
+
+### Will the data be used or made available in larger OpenStreetMap ecosystem?
+Yes. Currently Microsoft Open Buildings dataset is used in ml-enabler for task creation. You can try it out at [AI assisted Tasking Manager](https://tasks-assisted.hotosm.org/). The dataset is also available for editing in [RapiD](https://mapwith.ai/rapid-sotm2019#background=Maxar-FB&disable_features=boundaries&map=17.75/-6.17931/35.74461).
+
+### What is the creation process for this data?
 The building extraction is done in two stages:
 1.	Semantic Segmentation – Recognizing building pixels on the aerial image using DNNs
 2.	Polygonization – Converting building pixel blobs into polygons
+
 ### Stage1: Semantic Segmentation
 ![](/images/segmentation.jpg)
-
 
 #### DNN architecture
 The network backbone is EfficientNet B3 which can be found [here](https://arxiv.org/abs/1905.11946).
@@ -60,8 +73,8 @@ The evaluation set contains 18.5k building. The metrics on the set are:
 ### Data Vintage
 The vintage of the footprints depends on the vintage of the underlying imagery. Bing Imagery is a composite of multiple sources, therefore it is difficult to know the exact dates for individual pieces of data.
 
-#### How good are the data?
-Our metrics show that in the vast majority of cases the quality is at least as good as data hand digitized buildings in OpenStreetMap. It is not perfect, particularly in dense urban areas but it is great in rural areas. Here is the result breakdown per area type:  
+#### How good is the data?
+Our metrics show that in the vast majority of cases the quality is at least as good as data hand digitized buildings in OpenStreetMap. It is not perfect, particularly in dense urban areas but it provides good recall in rural areas. See below for metrics by area type:  
 ![](/images/polygonmetrics.JPG)
 
 ### What is the coordinate reference system?
@@ -70,18 +83,6 @@ EPSG: 4326
 ### Will there be more data coming for other geographies?
 Maybe. This is a work in progress.
 
-### Why is the data being released?
-Microsoft has a continued interest in supporting a thriving OpenStreetMap ecosystem.
-
-### Should we import the data into OpenStreetMap?
-Maybe. Never overwrite the hard work of other contributors or blindly import data into OSM without first checking the local quality. While our metrics show that this data meets or exceeds the quality of hand-drawn building footprints, the data does vary in quality from place to place, between rural and urban, mountains and plains, and so on. Inspect quality locally and discuss an import plan with the community. Always follow the [OSM import community guidelines](https://wiki.openstreetmap.org/wiki/Import/Guidelines).
-
-| Country       | Number of Buildings  | Unzipped MB |
-| ------------- |:-------------:| -----:|
-| [Uganda and Tanzania](https://usbuildingdata.blob.core.windows.net/tanzania-uganda-buildings/UgandaAndTanzania_2019-09-16.zip)|17,943,078|3541|
-
-### Will the data be used or made available in larger OpenStreetMap ecosystem?
-Yes. Currently Microsoft Open Buildings dataset is used in ml-enabler for task creation. You can try it out at [AI assisted Tasking Manager](https://tasks-assisted.hotosm.org/). The dataset is also available for editing in [RapiD](https://mapwith.ai/rapid-sotm2019#background=Maxar-FB&disable_features=boundaries&map=17.75/-6.17931/35.74461).
 <br>
 
 ## Contributing
@@ -103,9 +104,9 @@ contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additio
 Microsoft, Windows, Microsoft Azure and/or other Microsoft products and services referenced in the documentation
 may be either trademarks or registered trademarks of Microsoft in the United States and/or other countries.
 The licenses for this project do not grant you rights to use any Microsoft names, logos, or trademarks.
-Microsoft's general trademark guidelines can be found at http://go.microsoft.com/fwlink/?LinkID=254653.
+Microsoft's general trademark guidelines can be found [here](http://go.microsoft.com/fwlink/?LinkID=254653).
 
-Privacy information can be found at https://privacy.microsoft.com/en-us/
+Privacy information can be found [here](https://privacy.microsoft.com/en-us/)
 
 Microsoft and any contributors reserve all others rights, whether under their respective copyrights, patents,
 or trademarks, whether by implication, estoppel or otherwise.
