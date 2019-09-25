@@ -25,7 +25,7 @@ The network backbone is EfficientNet B3 which can be found [here](https://arxiv.
 The model is fully-convolutional, meaning that the model can be applied to an image of any size (constrained by GPU memory, 4096x4096 in our case).
 
 #### Training details
-The training set consists of 1.2 million labeled buildings. Images in the set are with 30 cm/pixel resolution.
+The training set consists of 1.2 million labeled buildings. The data is diverse in terms of geolocation, urbanization and underlying imagery, in order to attain the good corpus representativeness. We also used mixuture of high and low quality labels. Images in the set are with 30 cm/pixel resolution.
 
 #### Pixel Metrics
 These are the intermediate stage metrics we use to track DNN model improvements and they are pixel based.
@@ -60,8 +60,9 @@ The evaluation set contains 18.5k building. The metrics on the set are:
 ### Data Vintage
 The vintage of the footprints depends on the vintage of the underlying imagery. Bing Imagery is a composite of multiple sources, therefore it is difficult to know the exact dates for individual pieces of data.
 
-### How good is the data?
-Our metrics show that in the vast majority of cases the quality is at least as good as data hand digitized buildings in OpenStreetMap. It is not perfect, particularly in dense urban areas but it is great in rural areas.
+#### How good are the data?
+Our metrics show that in the vast majority of cases the quality is at least as good as data hand digitized buildings in OpenStreetMap. It is not perfect, particularly in dense urban areas but it is great in rural areas. Here is the result breakdown per area type:  
+![](/images/polygonmetrics.JPG)
 
 ### What is the coordinate reference system?
 EPSG: 4326
