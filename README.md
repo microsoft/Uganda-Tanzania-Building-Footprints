@@ -1,18 +1,18 @@
 ## Introduction
 Under Microsoft’s AI for Humanitarian Action program, Bing Maps is contributing to an initiative from Humanitarian OpenStreetMap Team that will bring AI Assistance to open map building. More information around the partnership is available on [Bing Maps blog](https://blogs.bing.com/maps/2019-09/microsoft-releases-18M-building-footprints-in-uganda-and-tanzania-to-enable-ai-assisted-mapping).
 
-Bing Maps is releasing country wide open building footprints datasets in Uganda and Tanzania. This dataset contains 17,943,078 computer generated building footprints. The data is freely available for download and use under applicable license. 
+Bing Maps is releasing country wide open building footprints datasets in Uganda and Tanzania. This dataset contains 17,942,601 computer generated building footprints. The data is freely available for download and use under applicable license. 
 
 ## License
 This data is licensed by Microsoft under the [Open Data Commons Open Database License (ODbL)](https://opendatacommons.org/licenses/odbl/).
 
 ## FAQ
 ### What does the data include?
-17,943,078 building footprint polygon geometries in Uganda and Tanzania in GeoJSON format. You can download the data here:
+17,942,601 building footprint polygon geometries in Uganda and Tanzania in GeoJSON format. You can download the data here:
 
 | Country       | Number of Buildings  | Unzipped MB |
 | ------------- |:-------------:| -----:|
-| [Uganda and Tanzania](https://usbuildingdata.blob.core.windows.net/tanzania-uganda-buildings/UgandaAndTanzania_2019-09-16.zip)|17,943,078|3541|
+| [Uganda and Tanzania](https://usbuildingdata.blob.core.windows.net/tanzania-uganda-buildings/UgandaAndTanzania_2019-09-16.zip)|17,942,601|3541|
 
 ### What is the GeoJson format?
 GeoJSON is a format for encoding a variety of geographic data structures. 
