@@ -1,7 +1,7 @@
 ## Introduction
 Under Microsoft’s AI for Humanitarian Action program, Bing Maps is contributing to an initiative from Humanitarian OpenStreetMap Team that will bring AI Assistance to open map building. More information around the partnership is available on [Bing Maps blog](https://blogs.bing.com/maps/2019-09/microsoft-releases-18M-building-footprints-in-uganda-and-tanzania-to-enable-ai-assisted-mapping).
 
-Bing Maps is releasing country wide open building footprints datasets in Uganda and Tanzania. This dataset contains 17,942,345‬ computer generated building footprints derived using Bing Maps algorithms on aerial imagery. Aerial imagery used for Uganda and Tanzania extraction is from our imagery partner Maxar. The data is freely available for download and use under applicable license. 
+Bing Maps is releasing country wide open building footprints datasets in Uganda and Tanzania. This dataset contains 17,942,345‬ computer generated building footprints derived using Bing Maps algorithms on satellite imagery. Satellite imagery used for Uganda and Tanzania extraction is from our imagery partner Maxar Technologies. The data is freely available for download and use under applicable license. 
 
 
 ## License
@@ -31,7 +31,7 @@ Yes. Currently Microsoft Open Buildings dataset is used in ml-enabler for task c
 
 ### What is the creation process for this data?
 The building extraction is done in two stages:
-1.	Semantic Segmentation – Recognizing building pixels on the aerial image using DNNs
+1.	Semantic Segmentation – Recognizing building pixels on the satellite image using DNNs
 2.	Polygonization – Converting building pixel blobs into polygons
 
 ### Stage1: Semantic Segmentation
