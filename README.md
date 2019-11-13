@@ -1,7 +1,8 @@
 ## Introduction
 Under Microsoft’s AI for Humanitarian Action program, Bing Maps is contributing to an initiative from Humanitarian OpenStreetMap Team that will bring AI Assistance to open map building. More information around the partnership is available on [Bing Maps blog](https://blogs.bing.com/maps/2019-09/microsoft-releases-18M-building-footprints-in-uganda-and-tanzania-to-enable-ai-assisted-mapping).
 
-Bing Maps is releasing country wide open building footprints datasets in Uganda and Tanzania. This dataset contains 17,942,345‬ computer generated building footprints. The data is freely available for download and use under applicable license. 
+Bing Maps is releasing country wide open building footprints datasets in Uganda and Tanzania. This dataset contains 17,942,345‬ computer generated building footprints derived using Bing Maps algorithms on satellite imagery. Satellite imagery used for Uganda and Tanzania extraction is from our imagery partner Maxar Technologies. The data is freely available for download and use under applicable license. 
+
 
 ## License
 This data is licensed by Microsoft under the [Open Data Commons Open Database License (ODbL)](https://opendatacommons.org/licenses/odbl/).
@@ -30,7 +31,7 @@ Yes. Currently Microsoft Open Buildings dataset is used in ml-enabler for task c
 
 ### What is the creation process for this data?
 The building extraction is done in two stages:
-1.	Semantic Segmentation – Recognizing building pixels on the aerial image using DNNs
+1.	Semantic Segmentation – Recognizing building pixels on the satellite image using DNNs
 2.	Polygonization – Converting building pixel blobs into polygons
 
 ### Stage1: Semantic Segmentation
@@ -41,7 +42,7 @@ The network backbone is EfficientNet B3 which can be found [here](https://arxiv.
 The model is fully-convolutional, meaning that the model can be applied to an image of any size (constrained by GPU memory, 4096x4096 in our case).
 
 #### Training details
-The training set consists of 1.2 million labeled buildings. The data is diverse in terms of geolocation, urbanization and underlying imagery, in order to attain the good corpus representativeness. We also used mixuture of high and low quality labels. Images in the set are with 30 cm/pixel resolution.
+The training set consists of 1.2 million labeled buildings. The data is diverse in terms of geolocation, urbanization and underlying imagery, in order to attain the good corpus representativeness. We also used mixture of high and low quality labels. Images in the set are with 30 cm/pixel resolution.
 
 #### Pixel Metrics
 These are the intermediate stage metrics we use to track DNN model improvements and they are pixel based.
