@@ -27,7 +27,7 @@ Microsoft has a continued interest in supporting a thriving OpenStreetMap ecosys
 Maybe. Never overwrite the hard work of other contributors or blindly import data into OSM without first checking the local quality. While our metrics show that this data meets or exceeds the quality of hand-drawn building footprints, the data does vary in quality from place to place, between rural and urban, mountains and plains, and so on. Inspect quality locally and discuss an import plan with the community. Always follow the [OSM import community guidelines](https://wiki.openstreetmap.org/wiki/Import/Guidelines).
 
 ### Will the data be used or made available in larger OpenStreetMap ecosystem?
-Yes. Currently Microsoft Open Buildings dataset is used in ml-enabler for task creation. You can try it out at [AI assisted Tasking Manager](https://tasks-assisted.hotosm.org/). Facebook has also integrated the dataset into experimental version of RapiD editor. Try out this experimental version here [RapiD](https://mapwith.ai/rapid-sotm2019).
+Yes. Currently Microsoft Open Buildings dataset is used in ml-enabler for task creation. You can try it out at [AI assisted Tasking Manager](https://tasks-assisted.hotosm.org/). Facebook has also integrated the dataset into RapiD editor. Try it out here [RapiD](https://mapwith.ai/rapid#background=Bing&disable_features=boundaries&map=2.00/0.0/0.0).
 
 ### What is the creation process for this data?
 The building extraction is done in two stages:
