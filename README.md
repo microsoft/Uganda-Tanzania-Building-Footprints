@@ -75,7 +75,7 @@ The evaluation set contains 18.5k building. The metrics on the set are:
 - IoU is 0.68, Shape distance is 0.39, Average rotation error is 4.1 degrees
 
 ### What is the vintage of this data?
-The vintage of the footprints depends on the vintage of the underlying imagery. Bing Imagery is a composite of multiple sources, therefore it is difficult to know the exact dates for individual pieces of data.
+The vintage of the footprints depends on the vintage of the underlying imagery. Bing Imagery is a composite of multiple sources, therefore it is difficult to know the exact dates for individual pieces of data. Extraction of building footprints was performed on 30cm optical imagery products from Maxar collected circa between May 2018 and August 2019. Source imagery cannot be shared due to it being under a commerical license. Imagery is available for purchase from [Maxar](maxar.com)
 
 ### How good is the data?
 Our metrics show that in the vast majority of cases the quality is at least as good as data hand digitized buildings in OpenStreetMap. It is not perfect, particularly in dense urban areas but it provides good recall in rural areas. See below for metrics by area type:  
