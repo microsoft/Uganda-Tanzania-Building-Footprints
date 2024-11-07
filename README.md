@@ -13,8 +13,8 @@ This data is licensed by Microsoft under the [Open Data Commons Open Database Li
 
 | Country       | Number of Buildings  | Unzipped MB |
 | ------------- |:-------------:| -----:|
-| [Uganda](https://usbuildingdata.blob.core.windows.net/tanzania-uganda-buildings/Uganda_2019-09-16.zip)|6,928,078‬|1339|
-| [Tanzania](https://usbuildingdata.blob.core.windows.net/tanzania-uganda-buildings/Tanzania_2019-09-16.zip)|11,014,267‬|2202|
+| [Uganda](https://minedbuildings.z5.web.core.windows.net/legacy/tanzania-uganda-buildings/Uganda_2019-09-16.zip)|6,928,078‬|1339|
+| [Tanzania](https://minedbuildings.z5.web.core.windows.net/legacy/tanzania-uganda-buildings/Tanzania_2019-09-16.zip)|11,014,267‬|2202|
 
 ### What is the GeoJson format?
 GeoJSON is a format for encoding a variety of geographic data structures. 
